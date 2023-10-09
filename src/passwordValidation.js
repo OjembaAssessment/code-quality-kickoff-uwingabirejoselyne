@@ -29,6 +29,9 @@ if(!/\d/.test(password) || !/[a-zA-Z]/.test(password)){
 if (/[^a-zA-Z0-9]/.test(password)) {
   return false;
 }
+if(!/\a-zA-Z/.test(password)){
+return false
+}
   
 
   const setOfPassword = new Set([...password]);

@@ -6,11 +6,6 @@
 
 // FUNCTION 1
 export default function countLetterR(list) {
-  let count = 0;
-  for (const item of list) {
-    if (item === "R") {
-      count++;
-    }
-  }
-  return count;
+  const match = list.match(/R/g);
+  return match.length
 }

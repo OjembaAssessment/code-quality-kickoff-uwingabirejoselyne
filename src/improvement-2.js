@@ -6,8 +6,6 @@
 
 // FUNCTION 2
 export default function processItems(items) {
-  const processedItems = items.filter(item =>item.type ==='Food')
-  return processedItems;
-  
+  return items.filter(item =>item.type ==='Food')
   }
 
